@@ -9,8 +9,7 @@ function subscribeComponent ()
             <p style = { {
                 padding: "5%",
                 fontWeight: "bold",
-                fontSize: "30px",
-                marginBottom: "0px"
+                fontSize: "30px"
             }}>Subscribe..
             </p>
             <p style = { {

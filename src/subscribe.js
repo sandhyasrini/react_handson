@@ -7,18 +7,36 @@ function subscribeComponent ()
     return (
         <div className="main">
             <p style = { {
-                padding: "5%",
                 fontWeight: "bold",
-                fontSize: "30px"
-            }}>Subscribe..
+                fontSize: "30px",
+                color:"#EDBC43"
+            }}>Join Mailing List..
             </p>
-            <p style = { {
+            <p style = {{
                 padding: "5%",
                 fontWeight: "bold",
                 fontSize: "17px",
-                color:"#999"
+                color:"#fff"
             }}>TREAT YOURSELF WITH WEEKLY PRODUCT 
 RELEASES, DIGITAL LOVE, AND EXCLUSIVE DEALS.</p>
+
+<div className = "inputStyle" style={{padding: "0" ,display : "inline-block"}}>
+                <input type = "text"
+                name = "username"
+                required style = {
+                    {
+                        width: "100%",
+                        margin: "2%",
+                        marginLeft:"-2%"
+                    }
+                }
+                /> 
+                <span className = "floating-label" > E - MAIL ADDRESS </span>
+                 </div>
+                 <button className = "buttonsubscribe"  style={{display : "inline-block"}}> GO </button> 
+
+                 
+
         </div>
     )
 }

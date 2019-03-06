@@ -1,0 +1,18 @@
+
+  
+  Card.Group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 10%;
+  }
+  
+  div.ui.four.cards.items {
+    margin-top: 10%
+  }
+  Card
+  {
+width: 10%
+  }

@@ -5,7 +5,7 @@ import './App.css'
 function headerComponent ()
 {
     return (
-        <header>
+        <header style={{ position: "sticky"}}>
             <div>
                 <ul>
                     <li><a className="active" href="#home">Home</a></li>

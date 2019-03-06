@@ -5,6 +5,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+
+
+header {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .button {
@@ -16,11 +31,22 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: bold
 }
+.buttonsubscribe 
+{
+  width: 15%;
+  background-color: #181548;
+  color: white;
+  padding: 2%;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold
+}
 main {
-  border: 1px solid #ddd;
+  border: 1px solid #aaa;
   width: 30%;
   align-content: center;
-  color: #181548;
+  color: #fff;
+  
 }
 
 .main {
@@ -34,7 +60,10 @@ main {
 .inputStyle input {
   border: 1px solid #bbb;
   height: 50px;
-  padding: 5% 5% 0 5%
+  padding: 5% 5% 0 5%;
+  font-size: 20px;
+  color: #222;
+  font-family: 'Quicksand', sans-serif;
   
 }
 
@@ -87,17 +116,18 @@ input:not(:focus):valid ~ .floating-label{
 ul {
   list-style-type: none;
   font-family: 'Varela Round';
-
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  background: transparent;
   top: 0;
-  border-bottom:1px solid #eee;
   font-weight: bold;
   font-size: 20px
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li {

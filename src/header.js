@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css'
+import mainLogo from './trans.png';
+
 
 
 function headerComponent ()
@@ -8,9 +10,13 @@ function headerComponent ()
         <header>
             <div>
                 <ul>
-                    <li><a className="active" href="#home">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li style={{float:"right"}}><a href="#contact">Contact</a></li>
+                    <li>
+                        <div>
+                            <a href="#home" className="page-scroll img-responsive" style={{padding: 0}}> 
+                            <img src={mainLogo} alt="Icon" width="100" height="50" />
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </header>

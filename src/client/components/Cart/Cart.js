@@ -70,7 +70,7 @@ class CartComponent extends React.Component
     <Table.Body>
     {map(myArr, (product)=> (
       <Table.Row>
-        <Table.Cell className="ui center aligned"><img style={{display:"inline-block"}} src= {require('../../img/' + product.img)} alt="no image"  height="100" width="100" /> 
+        <Table.Cell className="ui center aligned"><img style={{display:"inline-block"}} src= {require('../../img/' + product.img)} alt="no image" /> 
         <span style={{display:"inline-block" , marginLeft: "3%"}}>
             <p style={{fontWeight:"bold" ,fontSize:"120%"}}>{(product.name).toUpperCase()} </p>
             <p style={{color:"#777" ,fontSize:"100%" , textAlign:"left"}}>{(product.type).toUpperCase()}</p>

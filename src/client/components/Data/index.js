@@ -100,7 +100,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Nordik Chair 01",
+    name: "Nordik 01",
     color: "Peaceful Cream",
     price: 14.99,
     type: "nordik",
@@ -109,7 +109,7 @@ const products = [
   },
   {
     id: 13,
-    name: "Nordik Chair 02",
+    name: "Nordik 02",
     color: "Modest Grey",
     price: 10.99,
     type: "nordik",
@@ -118,7 +118,7 @@ const products = [
   },
   {
     id: 14,
-    name: "Nordik Storage 01",
+    name: "Nordik 01",
     color: "Modest Grey",
     price: 14.99,
     type: "nordik",

@@ -10,14 +10,13 @@ import { FaPlus} from "react-icons/fa";
 
 class AllItems extends React.Component
 { 
-
 render()
 {
     return (
         <Grid  className="segment centered" centered columns = {3} style={{border:"none" , backgroundColor:"transparent",marginLeft:"5%" ,boxShadow:"none"}} >
         <Grid.Row centered style={{margin:"3% 0% 6% 6%"}}>
         {map(this.props.product, (product)=> (
-            <Grid.Column style={{border:"none", boxShadow:"none"}}>
+            <Grid.Column key={product.id}  style={{border:"none", boxShadow:"none"}}>
     <Card key={product.id} style={{marginTop:"4%" , width:"65%",boxShadow:"none"}}>
         <Image src= {require('../../img/' + product.img)} style={{height:"32vh" }} />
         <Card.Content>

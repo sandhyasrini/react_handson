@@ -13,29 +13,34 @@ class Landing extends React.Component
 
     state = {
         cartItems:[
-            {
-                data:1
-            }
         ]
       }
-     addToCart = (product) => {
-    //     let floors = [...this.state.cartItems];
 
-    //     // Add item to it
-    //     floors.push(product);
-        
-    //     // Set state
-    //     this.setState({ floors });
-    //   this.setState({
-    //     cartItems : floors
-    //   })
+
+      componentWillReceiveProps()
+      {
+        this.setState (
+            {
+                cartItems: this.props.location.state.cartItems})
+            }
+
+      
+
+     addToCart = (product) => {
+         console.log(this.state.cartItems);
+         
+        let floors = [...this.state.cartItems];
+        floors.push(product);
+      this.setState({
+        cartItems : floors
+      })
     } 
 
 render()
 {
     return (
 <div>
-    <Header cartState = {this.state.cartItems}/>
+    <Header cartState = {this.state.cartItems} moveToCart = {this.addToCart}/>
     <div ref={(section) => { this.intro = section; }} style={{
     background:"linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url(" +bgImage+")",
     backgroundRepeat:"no-repeat",
@@ -43,7 +48,7 @@ render()
     backgroundSize:"cover",
     backgroundPosition:"center"
     }}>
-    <div style={{textAlign:"center" ,padding:"8%" ,color:"#fff" ,fontSize:"200%" }}>
+    <div style={{textAlign:"center" ,padding:"1%" ,color:"#fff" ,fontSize:"200%" }}>
     <div style={{padding:"2% 23% 2% 23%" ,margin:"8%"}}>
     <div style={{background:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),transparent", padding:"2%"}}>
     <div style={{border:"1px solid white" , padding:"6%" ,fontFamily:"'Quicksand', sans-serif"}}>

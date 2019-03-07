@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/App.css';
 import Header from '../Login/header'
 import Login from '../Login/login'
-import bgImage from '../../img/kaptain-bg.png'
+import bgImage from '../../img/1.png'
 import { FaFacebookF , FaTwitter ,FaInstagram } from "react-icons/fa";
 
 

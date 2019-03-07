@@ -46,7 +46,7 @@ class headerComponent extends React.Component
              <li className = {this.props.hasCart ? "hide" : "show"} style={{float:"right" , marginTop:"1.5%" , marginRight:"2%" , color:"white",cursor:"pointer"}}>
              <FaShoppingCart onClick ={() => this.gotoCart()}/>
              <span style ={this.props.cartState.length > 0 ? { display:'inline-block'} : {display : 'none'}}>
-             <span style={ { backgroundColor:"#fff" , color:"#111" ,borderRadius:"50%" , fontSize:"60%"}}>{this.props.cartState.length > 0 ? this.props.cartState.length : null}</span>
+             <span style={ { backgroundColor:"red" , color:"#fff" ,borderRadius:"50%" , fontSize:"60%" , padding:"10%"}}>{this.props.cartState.length > 0 ? this.props.cartState.length : null}</span>
              </span>
              </li> 
          </ul>

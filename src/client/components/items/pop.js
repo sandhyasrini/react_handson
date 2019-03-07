@@ -2,40 +2,24 @@
 import React from 'react';
 import Items from '../AllItems/AllItems'
 import Header from '../Header/header'
-import bgImage from '../../img/kaptain-bg.png'
+import bgImage from '../../img/popBG.png'
 import scrollToComponent from 'react-scroll-to-component';
 import { FaArrowCircleDown} from "react-icons/fa";
-import PRODUCTS from '../Data';
+import PRODUCTS from '../../components - Copy/Data';
 
 
 class Landing extends React.Component
 { 
 
-    state = {
-        cartItems:[
-            {
-                data:1
-            }
-        ]
-      }
-     addToCart = (product) => {
-        let floors = [...this.state.cartItems];
-
-        // Add item to it
-        floors.push(product);
-        
-        // Set state
-        this.setState({ floors });
-      this.setState({
-        cartItems : floors
-      })
-    } 
+     filterItem = PRODUCTS.filter((element) => {
+        return element.type == "clock"
+    })
 
 render()
 {
     return (
 <div>
-    <Header cartState = {this.state.cartItems}/>
+    <Header/>
     <div ref={(section) => { this.intro = section; }} style={{
     background:"linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url(" +bgImage+")",
     backgroundRepeat:"no-repeat",
@@ -47,10 +31,10 @@ render()
     <div style={{padding:"2% 23% 2% 23%" ,margin:"8%"}}>
     <div style={{background:"linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),transparent", padding:"2%"}}>
     <div style={{border:"1px solid white" , padding:"6%" ,fontFamily:"'Quicksand', sans-serif"}}>
-    Explore Our Furniture Range
+    POP
     <br />
-    <p style={{fontSize:"60%" ,paddingTop:"4%"}}>You can hunt high and low for the best deals of our sale. Or, if you’d like to keep it simple, you can find them right here!
-    </p>
+    <p style={{fontSize:"60%" ,paddingTop:"4%"}}>
+    Clean lines and timeless design, Pop is a staple timepiece for any home.    </p>
     </div>
     </div>
     </div>
@@ -59,7 +43,7 @@ render()
     </div>
 
     </div>
-    <Items moveToCart = {this.addToCart} product = {PRODUCTS} ref={(section) => { this.items = section; }} style ={{margin:"5%" , marginLeft:"3%"}} />
+    <Items product = {this.filterItem} ref={(section) => { this.items = section; }} style ={{margin:"5%" , marginLeft:"3%"}} />
 </div>
     )
 }

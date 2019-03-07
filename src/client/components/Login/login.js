@@ -34,7 +34,7 @@ handleSubmit = (e) => {
         localStorage.removeItem("checkBoxValidation");
         
     }
-    (this.state.username === "user@wipro.com" && this.state.password === "wipro@123" ) ?this.props.history.push('/subscribe') : alert("Unable to log in")
+    (this.state.username === "user@wipro.com" && this.state.password === "wipro@123" ) ?this.props.history.push('/home') : alert("Unable to log in")
 }
 
     render(){    

@@ -5,7 +5,7 @@ import Header from '../Header/header'
 import bgImage from '../../img/stax.png'
 import scrollToComponent from 'react-scroll-to-component';
 import { FaArrowCircleDown} from "react-icons/fa";
-import PRODUCTS from '../../components - Copy/Data';
+import PRODUCTS from '../Data';
 
 
 class Landing extends React.Component

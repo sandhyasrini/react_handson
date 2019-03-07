@@ -19,16 +19,16 @@ class Landing extends React.Component
         ]
       }
      addToCart = (product) => {
-        let floors = [...this.state.cartItems];
+    //     let floors = [...this.state.cartItems];
 
-        // Add item to it
-        floors.push(product);
+    //     // Add item to it
+    //     floors.push(product);
         
-        // Set state
-        this.setState({ floors });
-      this.setState({
-        cartItems : floors
-      })
+    //     // Set state
+    //     this.setState({ floors });
+    //   this.setState({
+    //     cartItems : floors
+    //   })
     } 
 
 render()

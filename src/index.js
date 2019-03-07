@@ -16,12 +16,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ReactDOM.render( <BrowserRouter>
     
       <Switch>
-        <Route exact path="/login" component={App} />
+        <Route exact path="/" component={App} />
         <Route path="/home" component= {Landing} />
         <Route path="/kaptain" component= {Kaptain} />
         <Route path="/pop" component= {Pop} />
         <Route path="/stax" component= {Stax} />
         <Route path="/nordik" component= {Nordik} />
+
       </Switch>
     
   </BrowserRouter>, document.getElementById('root'));

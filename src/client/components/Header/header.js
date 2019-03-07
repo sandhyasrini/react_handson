@@ -13,7 +13,7 @@ class headerComponent extends React.Component
 {
 
     handleCheck = (val) => {
-        this.props.history.push('/' +val) 
+        this.props.history.push( {pathname: '/' +val , state: {cartItems : this.props.cartState}}) 
     }
     render(){
     return (
@@ -35,9 +35,10 @@ class headerComponent extends React.Component
              <li className="li-style" onClick ={() => this.handleCheck("stax")}>Stax</li>
              <li style={{float:"right" , marginTop:"1.5%" , marginRight:"2%" , color:"white",cursor:"pointer"}}>
              <FaShoppingCart />
-             <span style ={this.props.cartState.length > 0 ? { display:'inline-block'} : {display : 'none'}}>
+             {/* <span style ={this.props.cartState.length > 0 ? { display:'inline-block'} : {display : 'none'}}>
              <span style={ { backgroundColor:"#fff" , color:"#111" ,borderRadius:"50%" , fontSize:"60%"}}>{this.props.cartState.length > 0 ? this.props.cartState.length : null}</span>
-             </span></li>
+             </span>*/}
+             </li> 
          </ul>
      </header>
         }

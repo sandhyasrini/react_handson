@@ -5,7 +5,7 @@ import Header from '../Header/header'
 import bgImage from '../../img/kaptainBG.png'
 import scrollToComponent from 'react-scroll-to-component';
 import { FaArrowCircleDown} from "react-icons/fa";
-import PRODUCTS from '../../components - Copy/Data';
+import PRODUCTS from '../Data';
 
 
 class Landing extends React.Component
@@ -15,11 +15,17 @@ class Landing extends React.Component
         return element.type == "chair"
     })
 
+    componentDidMount() {
+        var recievedMessage = this.props.location.state.cartItems
+
+        console.log(recievedMessage)
+      }
+    
 render()
 {
     return (
 <div>
-    <Header/>
+    <Header cartState = {this.recievedMessage}/>
     <div ref={(section) => { this.intro = section; }} style={{
     background:"linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url(" +bgImage+")",
     backgroundRepeat:"no-repeat",

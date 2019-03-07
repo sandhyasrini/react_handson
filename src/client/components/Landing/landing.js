@@ -27,6 +27,7 @@ class Landing extends React.Component
       
 
      addToCart = (product) => {
+         
          console.log(this.state.cartItems);
          
         let floors = [...this.state.cartItems];

@@ -6,6 +6,8 @@ import bgImage from '../../img/nordik.png'
 import scrollToComponent from 'react-scroll-to-component';
 import { FaArrowCircleDown} from "react-icons/fa";
 import PRODUCTS from '../Data';
+import { toast } from 'react-toastify';
+
 
 
 class Landing extends React.Component
@@ -26,6 +28,8 @@ class Landing extends React.Component
     }
 
     addToCart = (product) => {
+                toast("Added to cart !");
+
         console.log(this.state.recievedMessage);
         
        let floors = [...this.state.recievedMessage];

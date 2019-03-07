@@ -6,6 +6,7 @@ import '../../styles/Landing.css'
 import { Card ,Image ,Icon  , Grid } from 'semantic-ui-react'
 import path from "path"
 import { FaPlus} from "react-icons/fa";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 class AllItems extends React.Component

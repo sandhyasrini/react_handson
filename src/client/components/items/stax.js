@@ -20,6 +20,7 @@ class Landing extends React.Component
     }
 
     componentDidMount() {
+        
         this.setState (
             {
                 recievedMessage: this.props.location.state.cartItems})

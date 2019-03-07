@@ -90,7 +90,7 @@ class CartComponent extends React.Component
             <Table.Cell className="ui center aligned">
             </Table.Cell>
             <Table.Cell className="ui center aligned"  style={{fontWeight:"bold" , fontSize:"200%"}}>
-            TOTAL : $ {sum}
+            TOTAL : ${sum.toFixed(2)}
             </Table.Cell>
            
         </Table.Row>

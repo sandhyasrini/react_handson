@@ -18,7 +18,7 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ### `Login Credentials`
-# User Name : user@wipro.com  
-# Password : wipro@123
+### User Name : user@wipro.com  
+### Password : wipro@123
 
 

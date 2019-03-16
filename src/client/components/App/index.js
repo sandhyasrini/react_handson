@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/App.css';
 import Header from '../Login/header'
 import Login from '../Login/login'
-import bgImage from '../../img/kaptain-bg.png'
+import bgImage from '../../img/1.png'
 import { FaFacebookF , FaTwitter ,FaInstagram } from "react-icons/fa";
 
 
@@ -10,9 +10,13 @@ import { FaFacebookF , FaTwitter ,FaInstagram } from "react-icons/fa";
 class App extends Component {
   render() {
     return (
-        <div style= {
+        <div className="bgImage" style= {
           {  background:"linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url(" +bgImage+")",
-          height:"100vh"
+          backgroundPosition: "center",
+          backgroundRepeat:"no-repeat",
+          backgroundSize:"cover"
+
+
         }
         }>
             <Header />

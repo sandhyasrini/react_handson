@@ -7,6 +7,7 @@ import Kaptain from './client/components/items/kaptain'
 import Pop from './client/components/items/pop'
 import Stax from './client/components/items/stax'
 import Nordik from './client/components/items/nordik'
+import Cart from './client/components/Cart/Cart'
 
 
 import * as serviceWorker from './serviceWorker';
@@ -22,6 +23,7 @@ ReactDOM.render( <BrowserRouter>
         <Route path="/pop" component= {Pop} />
         <Route path="/stax" component= {Stax} />
         <Route path="/nordik" component= {Nordik} />
+        <Route path = "/cart" component={Cart} />
 
       </Switch>
     

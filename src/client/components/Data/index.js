@@ -6,7 +6,7 @@ const products = [
     price: 16.99,
     type: "chair",
     img: "kaptain.jpg",
-    inCart: false
+    inCart: 1
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     price: 4.99,
     type: "chair",
     img: "kaptain_black.jpg",
-    inCart: false
+    inCart: 1
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const products = [
     price: 14.99,
     type: "chair",
     img: "kaptain_tan.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const products = [
     price: 20.00,
     type: "chair",
     img: "Kaptain_White.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     price: 4.99,
     type: "clock",
     img: "pop_pink.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const products = [
     price: 19.99,
     type: "clock",
     img: "pop_red.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const products = [
     price: 6.00,
     type: "clock",
     img: "pop_plum.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     price: 14.99,
     type: "clock",
     img: "pop_blue.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const products = [
     price: 20.99,
     type: "stax",
     img: "stax_large.jpg",
-    inCart: false
+    inCart: 1
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const products = [
     price: 4.99,
     type: "stax",
     img: "stax_medium.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 11,
@@ -96,34 +96,34 @@ const products = [
     price: 45.99,
     type: "stax",
     img: "stax_small.jpg",
-    inCart: false
+    inCart: 1
   },
   {
     id: 12,
-    name: "Nordik Chair 01",
+    name: "Nordik 01",
     color: "Peaceful Cream",
     price: 14.99,
     type: "nordik",
     img: "nordik_white.jpg",
-    inCart: false
+    inCart: 1
   },
   {
     id: 13,
-    name: "Nordik Chair 02",
-    color: "Black T-Shirt for Men",
+    name: "Nordik 02",
+    color: "Modest Grey",
     price: 10.99,
     type: "nordik",
     img: "nordik_black.png",
-    inCart: false
+    inCart: 1
   },
   {
     id: 14,
-    name: "Nordik Storage 01",
-    color: "Grey Tanktop for Men",
+    name: "Nordik 01",
+    color: "Modest Grey",
     price: 14.99,
     type: "nordik",
     img: "storage_1.png",
-    inCart: false
+    inCart: 1
   }
 ];
 

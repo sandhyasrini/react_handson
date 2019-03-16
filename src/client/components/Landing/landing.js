@@ -21,7 +21,7 @@ class Landing extends React.Component {
     }
     addToCart = (product) => {
 
-        ToastsStore.info("Item added to cart")
+        ToastsStore.success("Item added to cart")
         let floors = [...this.state.cartItems];
         floors.push(product);
         this.setState({

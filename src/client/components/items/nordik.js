@@ -29,7 +29,7 @@ class Landing extends React.Component
     }
 
     addToCart = (product) => {
-        ToastsStore.info("Item added to cart")
+        ToastsStore.success("Item added to cart")
 
         console.log(this.state.recievedMessage);
         

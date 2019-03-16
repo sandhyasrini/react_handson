@@ -79,7 +79,8 @@ class CartComponent extends React.Component
          </Table.Cell >
         <Table.Cell style={{color:"#777" ,fontSize:"120%" }} className="ui center aligned">{product.color}</Table.Cell>
         <Table.Cell style={{color:"#777" ,fontSize:"120%" }} className="ui center aligned">{product.inCart}</Table.Cell>
-        <Table.Cell style={{color:"#777" ,fontSize:"120%" }} className="ui center aligned">${(product.price * product.inCart).toFixed(2)}</Table.Cell>
+        <Table.Cell style={{color:"#777" ,fontSize:"120%" }} className="ui center aligned">
+        ${(product.price).toFixed(2)}</Table.Cell>
       </Table.Row>
     ))}
     <Table.Row>

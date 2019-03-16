@@ -12,10 +12,12 @@ class headerComponent extends React.Component
 
 {
 
+
     componentDidMount()
     {
         this.setState({
             cartState : this.props.cartState
+            
         })
     }
 
@@ -25,7 +27,12 @@ class headerComponent extends React.Component
     gotoCart = () => {
         this.props.history.push({pathname : '/cart' , state: {cartItems : this.props.cartState}})
     }
+
+
+    
     render(){
+
+
     return (
         
         <StickyHeader
@@ -44,9 +51,9 @@ class headerComponent extends React.Component
              <li className="li-style" onClick ={() => this.handleCheck("nordik")}>Nordik</li>
              <li className="li-style" onClick ={() => this.handleCheck("stax")}>Stax</li>
              <li className = {this.props.hasCart ? "hide" : "show"} style={{float:"right" , marginTop:"1.5%" , marginRight:"2%" , color:"white",cursor:"pointer"}}>
-             <FaShoppingCart onClick ={() => this.gotoCart()}/>
+             <FaShoppingCart  onClick ={() => this.gotoCart()}/>
              <span style ={this.props.cartState.length > 0 ? { display:'inline-block'} : {display : 'none'}}>
-             <span style={ { backgroundColor:"red" , color:"#fff" ,borderRadius:"50%" , fontSize:"60%" , padding:"10%"}}>{this.props.cartState.length > 0 ? this.props.cartState.length : null}</span>
+             <span style={ { backgroundColor:"red" , color:"#fff" ,borderRadius:"50%" , fontSize:"60%" , padding:"10%" , paddingLeft:"25%" , paddingRight:"25%"}}>{this.props.cartState.length > 0 ? this.props.cartState.length : null}</span>
              </span>
              </li> 
          </ul>
